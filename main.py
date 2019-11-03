@@ -66,8 +66,6 @@ for fortified_vine_type in ['Aperitiff', 'Bitter', 'Eplebrennevin', 'Grappa', 'T
 for beer_type in ['Lager og pils', 'Hveteøl', 'Ale', 'Belgisk stil', 'Stout og porter', 'Sider', 'Øvrige']:
     category = 'øl'
     tf_search = tf.search('', category, beer_type)
-    if beer_type == 'Øvrige':
-        beer_type = 'Øl-Øvrige'
     lookup_and_store_search(tf_search, category, beer_type)
 
 db.close()
